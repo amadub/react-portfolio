@@ -1,12 +1,20 @@
 import React from 'react';
-import Navbar from './Navbar/Navbar';
+import MediaQuery from 'react-responsive';
+import Navbar from './Navbar';
+import MobileNavbar from './MobileNavbar';
 import '../../styles/Header.css';
+import { breakpoints } from '../../mediaQueries/deviceSizes';
 
 class Header extends React.Component {
     render() {
         return (
             <header>
-                <Navbar />
+                <MediaQuery minWidth={breakpoints.tablet.minWidth}>
+                    <Navbar />
+                </MediaQuery>
+                <MediaQuery maxWidth={breakpoints.phone.maxWidth}>
+                    <MobileNavbar />
+                </MediaQuery>
             </header>
         );
     };
