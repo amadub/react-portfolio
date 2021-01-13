@@ -1,0 +1,61 @@
+.icon {
+    position: absolute;
+    z-index: 1000;
+    font-size: 30px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    animation: pulse 8s infinite ease;
+}
+
+.fa-times {
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    transform: translate(0, -100%);
+    transition: transform 0.2s ease;
+}
+
+.showNav {
+    transform: translate(0);
+}
+
+
+/* STYLES */ 
+
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul li a {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.navbar ul li a:hover, .navbar ul li a:focus {
+    border-bottom: 2px solid white;
+}
