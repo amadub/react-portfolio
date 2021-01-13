@@ -9,8 +9,8 @@
 }
 
 .navbar-logo {
-    color: #fff;justify-self: start;
-    margin-left: 20px;
+    color: #fff;
+    justify-self: start;
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(25%, 50%);
+        transform: translate(10%, 50%);
     }
 
     .menu-icon {

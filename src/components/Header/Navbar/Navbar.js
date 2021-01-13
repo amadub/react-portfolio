@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { MenuItems } from './MenuItems';
 import { Button } from './Buttons';
 import '../../../styles/Navbar.css';
@@ -13,7 +14,9 @@ class Navbar extends React.Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 classname="navbar-logo">Portfolio<i className="fab fa-react"></i></h1>
+                <Link to="/">
+                    <h1 className="navbar-logo">Portfolio<i className="fab fa-react"></i></h1>
+                </Link>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} ></i>
                 </div>
@@ -21,12 +24,14 @@ class Navbar extends React.Component {
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>{item.title}</a>
+                                <Link to={item.url} className={item.cName}>{item.title}</Link>
                             </li>
                         );
                     })}
                 </ul>
-                <Button>Contact Me</Button>
+                <Link to="/contact">
+                    <Button>Contact Me</Button>
+                </Link>
             </nav>
         );
     };
