@@ -1,0 +1,23 @@
+.content--section {
+  margin: 30px 0;
+  padding: 25px;
+  color: white;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+.about-me .avatar-div {
+  margin: 0 15px;
+}
+
+.avatar {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+.about-me p {
+  text-align: center;
+}

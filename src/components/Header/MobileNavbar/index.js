@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { navLinks } from '../../../resources/nav-links';
 import './styles.css';
 
 class MobileNavbar extends React.Component {
@@ -16,7 +18,7 @@ class MobileNavbar extends React.Component {
 
     showLinks = (clicked) => {
         if (clicked) {
-            return 'showNav'
+            return 'show-nav--mobile'
         }
     }
 
@@ -27,17 +29,20 @@ class MobileNavbar extends React.Component {
             return 'fa-bars'
         }
     }
+    
+    renderLinks = (links) => {
+        return links.map(link => {
+            return <li key={link.title}><Link onClick={this.handleClick} className="menu-link--mobile" to={link.url}>{link.title}</Link></li>  
+        });
+    }
 
     render() {
         return(
             <div>
-                <i className={`fa icon ${this.showIcon(this.state.clicked)}`} onClick={this.handleClick}></i>
-                <nav className={`navbar ${this.showLinks(this.state.clicked)}`}>
+                <i className={`fa icon--mobile ${this.showIcon(this.state.clicked)}`} onClick={this.handleClick}></i>
+                <nav className={`navbar--mobile ${this.showLinks(this.state.clicked)}`}>
                     <ul>
-                        <li><a onClick={this.handleClick} className="menuLink" href="#">Skills</a></li>
-                        <li><a onClick={this.handleClick} className="menuLink" href="#">Projects</a></li>
-                        <li><a onClick={this.handleClick} className="menuLink" href="#">Widgets</a></li>
-                        <li><a onClick={this.handleClick} className="menuLink" href="#">Contact</a></li>
+                        {this.renderLinks(navLinks)}
                     </ul>
                 </nav>
             </div>

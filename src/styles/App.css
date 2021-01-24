@@ -4,3 +4,31 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
+html, body, #root, .root {
+    height: 100%;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    z-index: 1000;
+}
+
+.content {
+    flex: 1 0 auto;
+    background-color: #333;
+    filter: brightness(120%);
+}
+
+.content div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}

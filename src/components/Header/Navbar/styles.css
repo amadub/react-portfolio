@@ -1,0 +1,35 @@
+.navbar--desktop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+}
+
+.nav-logo--desktop {
+  padding-left: 10px;
+  color: white;
+}
+
+.navbar--desktop ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navbar--desktop ul li {
+  /* padding: 15px 10px; */
+}
+
+.navbar--desktop ul li a:hover {
+  background-color: #111;
+}
+
+.navbar--desktop ul li a, .navbar--desktop .nav-logo--desktop a {
+  padding: 15px 10px;
+  color: white;
+  display: block;
+  height: 100%;
+}
