@@ -45,8 +45,8 @@ class MobileNavbar extends React.Component {
                     <ul>
                         {this.renderLinks(navLinks)}
                         <div>
-                            <img className="nav__icon--mobile linkedin-icon" src={LinkedIn} />
-                            <img className="nav__icon--mobile resume-icon" src={Resume} />
+                            <img alt="linkedin logo" className="nav__icon--mobile linkedin-icon" src={LinkedIn} />
+                            <img alt="resume logo" className="nav__icon--mobile resume-icon" src={Resume} />
                         </div>
                     </ul>
                 </nav>
