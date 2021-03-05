@@ -1,35 +1,46 @@
-.navbar--desktop {
-  width: 100%;
+.nav__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  font-size: 1.5rem;
 }
 
-.nav-logo--desktop {
-  padding-left: 10px;
-  color: white;
+.nav__logo {
+  margin: 10px;
 }
 
-.navbar--desktop ul {
-  width: 100%;
+.nav__list {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style-type: none;
-  margin: 0;
+  list-style: none;
+  margin: 0 10px;
 }
 
-.navbar--desktop ul li {
-  /* padding: 15px 10px; */
+.nav__list__item {
+  padding: 10px;
 }
 
-.navbar--desktop ul li a:hover {
-  background-color: #111;
+.nav__icons--right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar--desktop ul li a, .navbar--desktop .nav-logo--desktop a {
-  padding: 15px 10px;
-  color: white;
-  display: block;
-  height: 100%;
+.nav__icon {
+  padding: 10px;
+}
+
+.resume-icon, 
+.linkedin-icon {
+  max-height: 80px;
+}
+
+.resume-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-icon-text {
+
 }

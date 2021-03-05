@@ -1,0 +1,49 @@
+:root {
+  --gun-powder: rgba(63, 61, 86, 1);
+}
+
+.hero__image {
+    position: absolute;
+    height: 550px;
+    width: 550px;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.computer-svg {
+  position: absolute;
+  width: 90%;
+  left: 30%;
+  top: 20%;
+}
+
+.ellipse-svg {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.hero__text {
+    position: absolute;
+    top: 30%;
+    margin-left: 15px;
+}
+
+.hero__text--heading {
+  color: black;
+  font-family: "Roboto", Helvetica;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.hero__text--subheading {
+  color: var(--gun-powder);
+  font-family: "Roboto", Helvetica;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
