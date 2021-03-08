@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { navLinks } from '../navLinks';
 import LinkedIn from '../resources/linkedin.svg';
 import Resume from '../resources/resume.svg';
@@ -33,13 +34,15 @@ class MobileNavbar extends React.Component {
     
     renderLinks = (links) => {
         return links.map(link => {
-            return <li key={link.title}>{link.title}</li>  
+            // return <li key={link.title}><Link onClick={this.handleClick} className="menu-link--mobile" to={link.url}><span>{link.title}</span></Link></li>  
+            return <li key={link.title}><Link onClick={this.handleClick} className="menu-link--mobile" to={link.url}>{link.title}</Link></li>  
         });
     }
 
     render() {
         return(
             <div>
+                <div className="nav__logo"><Link to="/">AaronWilliams.dev</Link></div>
                 <i className={`fa icon--mobile ${this.showIcon(this.state.clicked)}`} onClick={this.handleClick}></i>
                 <nav className={`navbar--mobile ${this.showLinks(this.state.clicked)}`}>
                     <ul>

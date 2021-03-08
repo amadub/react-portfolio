@@ -1,0 +1,41 @@
+.skills__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.skills__heading {
+  font-size: 4rem;
+  margin: 40px 0 25px 0;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.skills__icons__container {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.skills__icon {
+  width: 25%;
+  max-width: 200px;
+  padding: 25px 25px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .skills__icon {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .skills__icon {
+    width: 100%;
+  }
+}

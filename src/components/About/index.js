@@ -1,30 +1,29 @@
 import React from 'react';
-import avatar from '../../resources/images/avatar.png';
-import avatar2 from '../../resources/images/avatar2.png';
-import pug from '../../resources/images/pug.png';
+import avatar from './images/avatar.svg';
+import svgDesign from './images/svg-design.svg';
 import './styles.css';
 
 const About = () => {
   return (
     <div>
-      <section className="content--section about-me">
-        <div className="avatar-div">
-          <img className="avatar" src={avatar} alt="Avatar" />
+        <div class="about-me__container">
+            {/* <div class="overlap-group"> */}
+                <div className="background__design--container">
+                    <img className="background__design" src={svgDesign} />
+                </div>
+                <img className="about-me__avatar" src={avatar} />
+                <div class="about-me__text">
+                    <h1 class="about-me__text--h1">Get to Know Me</h1>
+                    <div class="about-me__text--p">
+                        <p>
+                            Hi, my name is Aaron Williams. I am a lifelong learner and enjoy solving challenging problems. I enjoy spending
+                            time with my family, riding bikes, discovering new places, being outdoors, flying my drone, and playing board
+                            games.
+                        </p>
+                    </div>
+                </div>
+            {/* </div> */}
         </div>
-        <p>This is about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu purus non mi dictum condimentum. Nunc arcu est, vulputate ac massa vel, lobortis interdum purus. Praesent dapibus euismod sapien sed dictum. Maecenas at mauris erat. Duis commodo dolor ac tellus efficitur maximus. Ut et efficitur lectus. Curabitur euismod vestibulum tristique. Nulla gravida ut mauris non consectetur. Pellentesque tristique neque nec sapien ultrices condimentum. Maecenas sodales mollis risus ut hendrerit. Praesent scelerisque hendrerit ante ac suscipit. Nullam posuere lobortis nisi et aliquam.</p>
-      </section>
-      <section className="content--section about-me">
-        <p>This is about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu purus non mi dictum condimentum. Nunc arcu est, vulputate ac massa vel, lobortis interdum purus. Praesent dapibus euismod sapien sed dictum. Maecenas at mauris erat. Duis commodo dolor ac tellus efficitur maximus. Ut et efficitur lectus. Curabitur euismod vestibulum tristique. Nulla gravida ut mauris non consectetur. Pellentesque tristique neque nec sapien ultrices condimentum. Maecenas sodales mollis risus ut hendrerit. Praesent scelerisque hendrerit ante ac suscipit. Nullam posuere lobortis nisi et aliquam.</p>
-        <div className="avatar-div">
-          <img className="avatar" src={pug} alt="Avatar" />
-        </div>
-      </section>
-      <section className="content--section about-me">
-        <div className="avatar-div">
-          <img className="avatar" src={avatar2} alt="Avatar" />
-        </div>
-        <p>This is about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu purus non mi dictum condimentum. Nunc arcu est, vulputate ac massa vel, lobortis interdum purus. Praesent dapibus euismod sapien sed dictum. Maecenas at mauris erat. Duis commodo dolor ac tellus efficitur maximus. Ut et efficitur lectus. Curabitur euismod vestibulum tristique. Nulla gravida ut mauris non consectetur. Pellentesque tristique neque nec sapien ultrices condimentum. Maecenas sodales mollis risus ut hendrerit. Praesent scelerisque hendrerit ante ac suscipit. Nullam posuere lobortis nisi et aliquam.</p>
-      </section>
     </div>
   );
 };

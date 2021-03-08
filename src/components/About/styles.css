@@ -1,23 +1,92 @@
-.content--section {
-  margin: 30px 0;
-  padding: 25px;
-  color: white;
-}
-
-.about-me {
+.about-me__container {
+  align-items: flex-start;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.about-me .avatar-div {
-  margin: 0 15px;
+.background__design--container {
+  position: absolute;
+  width: 100vw;
+  height: 90%;
+  bottom: 0;
+  overflow: hidden;
 }
 
-.avatar {
-  max-width: 200px;
-  border-radius: 50%;
+.background__design {
 }
 
-.about-me p {
-  text-align: center;
+.about-me__avatar {
+  max-width: 500px;
+  bottom: 10%;
+  right: 10%;
+  position: absolute;
+}
+
+.about-me__text {
+  position: absolute;
+  padding: 10px;
+  max-width: 40%;
+  top: 30%;
+  left: 5%;
+}
+
+.about-me__text--h1 {
+  font-size: 3.5rem;
+}
+
+.about-me__text--p {
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .about-me__text {
+    top: 25%;
+    left: 2%;
+  }
+  .about-me__text--h1 {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+
+  .about-me__text--p {
+    font-size: 1.25rem;
+    padding-left: 10px;
+  }
+
+  .about-me__avatar {
+    max-width: 350px;
+    bottom: 25%;
+    right: 12.5%;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .about-me__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-me__avatar {
+    position: static;
+    max-width: 200px;
+    margin: 60px 0 20px 0;
+  }
+
+  .about-me__text {
+    position: static;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .background__design--container {
+    display: none;
+  }
 }
