@@ -18,14 +18,14 @@ const Skills = () => {
       <div className="skills__container">
         <h1 className="skills__heading">Skills and Tools</h1>
         <div className="skills__icons__container">
-          <img className="skills__icon" src={pythonImage} />
-          <img className="skills__icon" src={dockerImage} />
-          <img className="skills__icon" src={cssImage} />
-          <img className="skills__icon" src={html5Image} />
-          <img className="skills__icon" src={jsImage} />
-          <img className="skills__icon" src={nodeImage} />
-          <img className="skills__icon" src={k8sImage} />
-          <img className="skills__icon" src={reactImage} />
+          <img alt="skills logo" className="skills__icon" src={pythonImage} />
+          <img alt="skills logo" className="skills__icon" src={dockerImage} />
+          <img alt="skills logo" className="skills__icon" src={cssImage} />
+          <img alt="skills logo" className="skills__icon" src={html5Image} />
+          <img alt="skills logo" className="skills__icon" src={jsImage} />
+          <img alt="skills logo" className="skills__icon" src={nodeImage} />
+          <img alt="skills logo" className="skills__icon" src={k8sImage} />
+          <img alt="skills logo" className="skills__icon" src={reactImage} />
         </div>
       </div>
     </div>

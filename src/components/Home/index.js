@@ -7,12 +7,12 @@ const Home = () => {
     return(
         <div className="home-wrapper">
             <div className="hero__image">
-                <img alt="circle decoration"class="ellipse-svg" src={ellipse} />
-                <img alt="computer" class="computer-svg" src={Computer} />
+                <img alt="circle decoration"className="ellipse-svg" src={ellipse} />
+                <img alt="computer" className="computer-svg" src={Computer} />
             </div>
             <div className="hero__text">
-                <h1 class="hero__text--heading">Web Developer</h1>
-                <div class="hero__text--subheading">Lifelong Learner</div>
+                <h1 className="hero__text--heading">Web Developer</h1>
+                <div className="hero__text--subheading">Lifelong Learner</div>
             </div>
         </div>
     );

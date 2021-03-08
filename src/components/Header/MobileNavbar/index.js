@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { navLinks } from '../navLinks';
 import LinkedIn from '../resources/linkedin.svg';
 import Resume from '../resources/resume.svg';
+import resumeFile from '../../../resources/resume.pdf';
 import './styles.css';
 
 class MobileNavbar extends React.Component {
@@ -48,8 +49,12 @@ class MobileNavbar extends React.Component {
                     <ul>
                         {this.renderLinks(navLinks)}
                         <div>
-                            <img alt="linkedin logo" className="nav__icon--mobile linkedin-icon" src={LinkedIn} />
-                            <img alt="resume logo" className="nav__icon--mobile resume-icon" src={Resume} />
+                            <a href="https://www.linkedin.com/in/aaronmawilliams/" target="_blank" rel="noreferrer">
+                                <img alt="linkedin logo" className="nav__icon--mobile linkedin-icon" src={LinkedIn} />
+                            </a>
+                            <Link to={resumeFile} target="_blank" download>
+                                <img alt="resume logo" className="nav__icon--mobile resume-icon" src={Resume} />
+                            </Link>
                         </div>
                     </ul>
                 </nav>

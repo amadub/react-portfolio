@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { navLinks } from '../navLinks';
 import LinkedIn from '../resources/linkedin.svg';
 import Resume from '../resources/resume.svg';
+import resumeFile from '../../../resources/resume.pdf';
 import './styles.css';
 
 const Navbar = () => {
@@ -18,8 +19,12 @@ const Navbar = () => {
                     {renderLinks(navLinks)}
                 </ul>
                 <div className="nav__icons--right">
-                    <img alt="linkedin logo" className="nav__icon linkedin-icon" src={LinkedIn} />
-                    <img alt="resume logo" className="nav__icon resume-icon" src={Resume} />
+                    <a href="https://www.linkedin.com/in/aaronmawilliams/" target="_blank" rel="noreferrer">
+                        <img alt="linkedin logo" className="nav__icon linkedin-icon" src={LinkedIn} />
+                    </a>
+                    <Link to={resumeFile} target="_blank" download>
+                        <img alt="resume logo" className="nav__icon resume-icon" src={Resume} />
+                    </Link>
                 </div>
             </nav>
     );

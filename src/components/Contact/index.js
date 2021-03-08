@@ -9,13 +9,13 @@ import circle5 from './images/circle5.svg';
 const Contact = () => {
   return (
     <div>
-       <div class="contact__container">
+       <div className="contact__container">
             <h1 className="contact__header">Contact</h1>
-            <div class="contact__phone">(260)580-0514</div>
+            <div className="contact__phone">(260)580-0514</div>
             <form className="contact__form">
               <fieldset>
                 <div className="input__wrapper">
-                  <label for="name" className="input--label">Name</label>
+                  <label htmlFor="name" className="input--label">Name</label>
                   <input 
                     type="text" 
                     name="name" 
@@ -24,7 +24,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="input__wrapper">
-                  <label for="email" className="input--label">Email</label>
+                  <label htmlFor="email" className="input--label">Email</label>
                   <input 
                     type="email" 
                     name="email" 
@@ -33,7 +33,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="input__wrapper">
-                  <label for="message" className="input--label"></label>
+                  <label htmlFor="message" className="input--label"></label>
                   <textarea
                     name="message" 
                     className="contact__form__input" 
@@ -46,12 +46,12 @@ const Contact = () => {
                 <button className="contact__form__submit">Send Message</button>
               </fieldset>
             </form>
-            <div class="circles__container">
-                    <img src={circle3} className="cirlce--svg circle3"/>
-                    <img src={circle4} className="cirlce--svg circle4"/>
-                    <img src={circle5} className="cirlce--svg circle5"/>
-                    <img src={circle1} className="circle--svg circle1"/>
-                    <img src={circle2} className="circle--svg circle2"/>
+            <div className="circles__container">
+                    <img alt="svg design" src={circle3} className="cirlce--svg circle3"/>
+                    <img alt="svg design" src={circle4} className="cirlce--svg circle4"/>
+                    <img alt="svg design" src={circle5} className="cirlce--svg circle5"/>
+                    <img alt="svg design" src={circle1} className="circle--svg circle1"/>
+                    <img alt="svg design" src={circle2} className="circle--svg circle2"/>
             </div>
         </div>
     </div>
