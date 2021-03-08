@@ -35,7 +35,6 @@ class MobileNavbar extends React.Component {
     
     renderLinks = (links) => {
         return links.map(link => {
-            // return <li key={link.title}><Link onClick={this.handleClick} className="menu-link--mobile" to={link.url}><span>{link.title}</span></Link></li>  
             return <li key={link.title}><Link onClick={this.handleClick} className="menu-link--mobile" to={link.url}>{link.title}</Link></li>  
         });
     }
