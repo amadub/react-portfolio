@@ -15,8 +15,7 @@ class Contact extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(process.env.EMAILJS_USER);
-    emailjs.sendForm(process.env.EMAILJS_SERVICE, process.env.EMAILJS_TEMPLATE, e.target, process.env.EMAILJS_USER)
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE, process.env.REACT_APP_EMAILJS_TEMPLATE, e.target, process.env.REACT_APP_EMAILJS_USER)
       .then((result) => {
           e.target.reset(); 
         this.setState({message: 'Thanks for the message!'});
